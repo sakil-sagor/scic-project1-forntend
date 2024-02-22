@@ -10,8 +10,9 @@ const DetailsProduct = () => {
   const [loading, setLoading] = useState(false);
   const { _id } = useParams();
   const [products] = useProducts();
-  const singleProduct = products.find((product) => product._id === _id);
-
+  console.log(products);
+  const singleProduct = products?.find((product) => product._id === _id);
+  console.log(singleProduct);
   // add to cart product
   const addToCart = () => {
     setLoading(true);
@@ -84,15 +85,9 @@ const DetailsProduct = () => {
               <div className="mb-1">
                 <p>Select the color:</p>
               </div>
-              <p className="bg-red-500 p-2 rounded-full inline-block mr-2 cursor-pointer">
-                {" "}
-              </p>
-              <p className="bg-black p-2 rounded-full inline-block mr-2  cursor-pointer">
-                {" "}
-              </p>
-              <p className="bg-green-500 p-2 rounded-full inline-block  cursor-pointer">
-                {" "}
-              </p>
+              <p className="bg-red-500 p-2 rounded-full inline-block mr-2 cursor-pointer"></p>
+              <p className="bg-black p-2 rounded-full inline-block mr-2  cursor-pointer"></p>
+              <p className="bg-green-500 p-2 rounded-full inline-block  cursor-pointer"></p>
             </div>
             <div>
               <div className="my-4 flex gap-x-2">

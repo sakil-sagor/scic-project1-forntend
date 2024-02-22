@@ -69,7 +69,6 @@ const Navbar = () => {
                     className="py-2  bg-sky-600  hover:text-pink-800  rounded-md"
                     to="/registration"
                   >
-                    {" "}
                     <span className="block py-2">LogIn</span>{" "}
                   </NavLink>
                 )}
@@ -123,7 +122,6 @@ const Navbar = () => {
                   className="py-2  bg-sky-600  hover:text-pink-800  rounded-md"
                   to="/registration"
                 >
-                  {" "}
                   <span className="block py-2">LogIn</span>{" "}
                 </NavLink>
               )}

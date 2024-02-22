@@ -36,14 +36,12 @@ const SingleProduct = ({ product }) => {
                     <p>{description.split(" ").slice(0, 20).join(" ")}...</p>
                 </div> */}
         <div className="my-4 grid grid-cols-2 gap-x-6">
-          <Link to={`/product/${_id}`}>
-            {" "}
+          <Link to={`/products/${_id}`}>
             <button className="  border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white duration-200  py-1 w-full rounded">
               Details
             </button>
           </Link>
           <Link to={`/updateProduct/${_id}`}>
-            {" "}
             <button className="bg-blue-700 hover:bg-transparent border hover:text-blue-700 border-blue-700 duration-200 text-white py-1 w-full rounded">
               Update
             </button>

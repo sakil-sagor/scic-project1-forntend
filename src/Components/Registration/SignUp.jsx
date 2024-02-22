@@ -62,7 +62,6 @@ const SignUp = ({ loginArea }) => {
           <div className="md:w-96 px-4  py-8 border-2 rounded-md bg-white shadow-2xl shadow-blue-300">
             <div className="mb-2 ">
               <span className=" text-gray-600 font-semibold block mb-2 ">
-                {" "}
                 Name
               </span>
               <input
@@ -75,7 +74,6 @@ const SignUp = ({ loginArea }) => {
             </div>
             <div className="mb-2 ">
               <span className=" text-gray-600 font-semibold block mb-2 ">
-                {" "}
                 Email{" "}
               </span>
               <input
@@ -89,7 +87,6 @@ const SignUp = ({ loginArea }) => {
 
             <div className="mb-2 ">
               <span className=" text-gray-600 font-semibold block mb-2 ">
-                {" "}
                 Password{" "}
               </span>
               <input
