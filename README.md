@@ -1,8 +1,21 @@
-# React + Vite
+# Dream tech service
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## live Link: https://scic-project1.netlify.app/
 
-Currently, two official plugins are available:
+### Welcome to tech product market, where user can buy, subscribe and view about latest tech products.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Our core vision and main features :
+
+- User can add find featured products
+
+- User can add brand name and also can added it to product
+
+- User can login with his/her google account or a custom email pass
+
+- User can make a contact with our support
+
+- user cand report about any unhealthy product
+
+- moderate can review product
+
+- admin can review everything
