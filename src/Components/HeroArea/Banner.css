@@ -1,13 +1,15 @@
 .banner-container {
-    background-image: linear-gradient(rgb(3 169 244 / 45%), #e97ca9a4), url(../../assets/banner.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: linear-gradient(rgb(3 169 244 / 45%), #e97ca9a4),
+    url(../../assets/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .banner-container-dark {
-    background-image: linear-gradient(rgba(4, 82, 118, 0.45), #20010ea4), url(../../assets/banner.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: linear-gradient(rgba(4, 82, 118, 0.45), #20010ea4),
+    url(../../assets/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
