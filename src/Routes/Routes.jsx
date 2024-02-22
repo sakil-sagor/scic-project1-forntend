@@ -4,6 +4,7 @@ import AddBrands from "../Components/AllBrands/AddBrands";
 import AllProducts from "../Components/AllProducts/AllProducts";
 import DetailsProduct from "../Components/AllProducts/DetailsProduct";
 import Registration from "../Components/Registration/Registration";
+import UpdateProduct from "../Components/UpdateProduct/UpdateProduct";
 import Main from "../Layout/Main";
 import ErroPage from "../Pages/ErrorPage/ErroPage";
 import Home from "../Pages/Home/Home";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/products/:_id",
         element: <DetailsProduct></DetailsProduct>,
+      },
+      {
+        path: "/updateProduct/:_id",
+        element: <UpdateProduct></UpdateProduct>,
       },
 
       {
