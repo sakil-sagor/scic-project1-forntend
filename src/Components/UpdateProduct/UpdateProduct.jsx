@@ -88,13 +88,16 @@ const UpdateProduct = () => {
     }
 
     // Replace this with your API endpoint to update the product data
-    fetch(`http://localhost:5000/api/v1/product/updateProduct/${_id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
+    fetch(
+      `https://scic-project1.vercel.app/api/v1/product/updateProduct/${_id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         console.log(data);

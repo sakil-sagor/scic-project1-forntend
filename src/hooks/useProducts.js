@@ -4,7 +4,7 @@ const useProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/v1/product/create")
+    fetch("https://scic-project1.vercel.app/api/v1/product/create")
       .then((res) => res.json())
       .then((data) => setProducts(data?.data));
   }, []);

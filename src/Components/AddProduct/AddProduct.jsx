@@ -72,7 +72,7 @@ const AddProduct = () => {
 
     console.log(formData);
 
-    fetch("http://localhost:5000/api/v1/product/create", {
+    fetch("https://scic-project1.vercel.app/api/v1/product/create", {
       method: "POST",
       headers: {
         "content-type": "application/json",

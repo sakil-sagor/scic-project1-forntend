@@ -4,7 +4,7 @@ const useBrands = () => {
   const [brands, setBrands] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/v1/product/createBrand")
+    fetch("https://scic-project1.vercel.app/api/v1/product/createBrand")
       .then((res) => res.json())
       .then((data) => setBrands(data.data));
   }, []);

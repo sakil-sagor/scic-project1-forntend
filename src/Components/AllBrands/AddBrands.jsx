@@ -61,7 +61,7 @@ const AddBrands = () => {
     const imageUrl = await uploadImageToImgBB(imageFile);
     formData.image = imageUrl;
     console.log(formData);
-    fetch("http://localhost:5000/api/v1/product/createBrand", {
+    fetch("https://scic-project1.vercel.app/api/v1/product/createBrand", {
       method: "POST",
       headers: {
         "content-type": "application/json",

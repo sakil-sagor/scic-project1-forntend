@@ -20,7 +20,7 @@ const DetailsProduct = () => {
 
     orderDetails = { ...orderDetails, email: user.email, id: _id };
 
-    fetch("http://localhost:5000/api/v1/product/addToCart", {
+    fetch("https://scic-project1.vercel.app/api/v1/product/addToCart", {
       method: "POST",
       headers: {
         "content-type": "application/json",
