@@ -81,17 +81,6 @@ const AuthProvider = ({ children }) => {
   //   return () => unsubscribed;
   // }, []);
 
-  const saveUser = (displayName, email, method) => {
-    const user = { name: displayName, email: email, role: "" };
-    fetch("https://tech-server-12.vercel.app/user", {
-      method: method,
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(user),
-    }).then();
-  };
-
   const authInfo = {
     user,
     loading,
@@ -104,7 +93,7 @@ const AuthProvider = ({ children }) => {
     darkMode,
     toggleDarkMode,
     getDisName,
-    saveUser,
+
     updateProfileName,
   };
 

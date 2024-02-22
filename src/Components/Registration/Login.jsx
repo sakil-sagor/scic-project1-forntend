@@ -11,31 +11,6 @@ const Login = () => {
   const navigate = useNavigate();
   const axiosSecure = useAxios();
 
-  // const handleLogin = (e) => {
-  //     e.preventDefault();
-
-  //     const form = new FormData(e.currentTarget);
-  //     const email = form.get('email');
-  //     const password = form.get('password');
-
-  //     signIn(email, password)
-  //         .then(result => {
-  //             console.log(result?.user?.email);
-  //             axios.post('/accesstoken/generatetoken', { email: result?.user?.email })
-
-  //             toast.success("User login successfully ")
-  //             setTimeout(function () {
-
-  //                 navigate(location?.state ? location.state : '/');
-  //                 // navigate(location?.state.pathname ? location.state.pathname : '/');
-  //             }, 500);
-  //         })
-  //         .catch(error => {
-  //             console.error(error);
-  //             toast.error(error.message)
-  //         })
-  // }
-
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -47,11 +22,6 @@ const Login = () => {
       const result = await signIn(email, password);
       console.log(result?.user?.email);
 
-      await axiosSecure.post(
-        "https://assignment11ser.iitpark.com/api/v1/accesstoken/generatetoken",
-        { email: result?.user?.email }
-      );
-
       toast.success("User login successfully");
       setTimeout(function () {
         navigate(location?.state ? location.state : "/");
@@ -61,30 +31,11 @@ const Login = () => {
       toast.error(error.message);
     }
   };
-  // const handleGoogleSignIn = () => {
-  //     googleLogin()
-  //         .then(result => {
-  //             console.log(result.user)
-  //             // navigate(location?.state ? location.state : '/');
-  //             toast.success("User Register successfully ")
-  //             setTimeout(function () {
-  //                 navigate(location?.state ? location.state : '/');
-  //             }, 500);
-  //         })
-  //         .catch(error => {
-  //             console.error(error)
-  //             toast.error(error.message)
-  //         })
-  // }
 
   const handleGoogleSignIn = async () => {
     try {
       const result = await googleLogin();
-      console.log(result.user);
-      await axiosSecure.post(
-        "https://assignment11ser.iitpark.com/api/v1/accesstoken/generatetoken",
-        { email: result?.user?.email }
-      );
+
       toast.success("User Register successfully ");
 
       if (result?.user?.email) {

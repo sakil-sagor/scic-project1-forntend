@@ -19,7 +19,7 @@ const DetailsProduct = () => {
     let orderDetails = {};
 
     orderDetails = { ...orderDetails, email: user.email, id: _id };
-    console.log(orderDetails);
+
     fetch("http://localhost:5000/api/v1/product/addToCart", {
       method: "POST",
       headers: {
