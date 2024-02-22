@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { AuthContext } from "../../Context/AuthProvider";
@@ -12,22 +12,22 @@ const AddToCart = () => {
 
   useEffect(() => {
     setLoading(true);
-    const url = `http://localhost:5000/api/v1/product/addToCart?email=${user?.email}`;
-    console.log(url);
+    const url = `https://tenthserver.iitpark.com/addToCart?email=${user?.email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        setCarts(data?.data);
+        setCarts(data);
+        console.log(data);
         setLoading(false);
       });
   }, []);
 
   const handelCancel = (id) => {
     console.log(id);
-    let link = `http://localhost:5000/api/v1/product/addToCart?email=${user?.email}&&id=${id}`;
+    let link = `https://tenthserver.iitpark.com/addToCart?email=${user?.email}&&id=${id}`;
     console.log(link);
     fetch(
-      `http://localhost:5000/api/v1/product/addToCart?email=${user?.email}&&id=${id}`,
+      `https://tenthserver.iitpark.com/addToCart?email=${user?.email}&&id=${id}`,
       {
         method: "DELETE",
       }
