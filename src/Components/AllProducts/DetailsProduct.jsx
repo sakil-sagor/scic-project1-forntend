@@ -20,7 +20,7 @@ const DetailsProduct = () => {
 
     orderDetails = { ...orderDetails, email: user.email, id: _id };
     console.log(orderDetails);
-    fetch("https://tenthserver.iitpark.com/addToCart", {
+    fetch("http://localhost:5000/api/v1/product/addToCart", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -30,7 +30,7 @@ const DetailsProduct = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        if (data.insertedId) {
+        if (data.status === "success") {
           toast.success("Successfully added to cart.");
           setLoading(false);
         }
@@ -40,7 +40,7 @@ const DetailsProduct = () => {
         }
 
         if (data.error) {
-          toast.error(" failed");
+          toast.error(" Already added in Cart");
         }
       });
   };
