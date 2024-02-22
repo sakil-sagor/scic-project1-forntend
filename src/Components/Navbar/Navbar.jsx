@@ -21,11 +21,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(true);
   const routes = [
     { id: 1, path: "/", name: "Home" },
-    { id: 2, path: "/rooms", name: "Rooms" },
-    { id: 3, path: "/myBookings", name: "My-Bookings" },
-    { id: 4, path: "/gallery", name: "Gallery" },
-    { id: 5, path: "/contactUs", name: "Contact-Us" },
-    { id: 5, path: "/aboutus", name: "About-Us" },
+    { id: 2, path: "/products", name: "Products" },
+    { id: 3, path: "/addProducts", name: "Add-Product" },
+    { id: 4, path: "/myCart", name: "My-Cart" },
   ];
   // function for user img
   let loginPhoto = () => {
@@ -51,7 +49,6 @@ const Navbar = () => {
             <NavLink to="/">
               <img className="rounded-md w-16" src={logo} alt="" />
             </NavLink>
-            <h1 className="block text-4xl text-sky-800 font-bold">I-Dream</h1>
           </div>
           <div>
             <ul className=" hidden md:flex">

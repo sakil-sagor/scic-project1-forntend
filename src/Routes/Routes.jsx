@@ -1,4 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
+import AddProduct from "../Components/AddProduct/AddProduct";
+import AddBrands from "../Components/AllBrands/AddBrands";
 import Registration from "../Components/Registration/Registration";
 import Main from "../Layout/Main";
 import ErroPage from "../Pages/ErrorPage/ErroPage";
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
 
+      {
+        path: "/addProducts",
+        element: <AddProduct></AddProduct>,
+      },
+      {
+        path: "/addBrand",
+        element: <AddBrands></AddBrands>,
+      },
       {
         path: "/registration",
         element: <Registration></Registration>,
